@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+section .ondas {
+  background: #4973ff;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+}
+section .ondas span {
+  content: "";
+  position: absolute;
+  width: 325vh;
+  height: 325vh;
+  top: 0;
+  left: 50%;
+  background: rgba(0, 0, 0, 0);
+  transform: translate(-50%, -75%);
+}
+section .ondas span:nth-child(1) {
+  border-radius: 45%;
+  background: rgb(20, 20, 20);
+  animation: animacion 5s linear infinite;
+}
+section .ondas span:nth-child(2) {
+  border-radius: 40%;
+  background: rgba(20, 20, 20, 0.5);
+  animation: animacion 10s linear infinite;
+}
+section .ondas span:nth-child(3) {
+  border-radius: 42.5%;
+  background: rgba(20, 20, 20, 0.4);
+  animation: animacion 15s linear infinite;
+}
+section .content {
+  position: relative;
+  z-index: 100;
+  color: #fff;
+  font-size: 4em;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+@keyframes animacion {
+  0% {
+    transform: translate(-50%, -75%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -75%) rotate(360deg);
+  }
+}/*# sourceMappingURL=style.css.map */

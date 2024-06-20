@@ -1,0 +1,49 @@
+body{
+    font-family: sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.conteiner{
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 70px;
+    padding: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: white
+}
+
+.conteiner-link{
+    display: flex;
+    align-items: center;
+}
+
+.conteiner-link .logo{
+    height: 50px;
+    margin-right: 12px
+}
+
+.navegacion .text{
+    padding-right: 11px;
+    font-weight: 600;
+}
+
+.navegacion .text:hover{
+    color: gold;
+}
+
+@media (max-width: 680px){
+    .conteiner{
+        flex-direction: column;
+    }
+
+    .navegacion{
+        padding: 10px 0px;
+    }
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+</head>
+<body>
+    <main>
+        <header>
+            <a href="#" class="logo">
+                <img src="img/logo.png" alt="letras">
+            </a>
+            <ul class="navegation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">TV Shows</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">Letest</a></li>
+                <li><a href="#">My List</a></li>
+            </ul>
+            <div class="search">
+                <input type="text" placeholder="Busqueda">
+                <button class="btnBuscar">
+                    <span class="material-icons">search
+                    </span>
+                </button>
+            </div>
+        </header>
+
+        <section class="banner">
+            <img src="img/monjaa.jpg" alt="monja" class="bg">
+            <span class="sombraImg"></span>
+            <div class="content">
+                <img src="img/the.png" alt="theNun" class="movietitle">
+                <h4>
+                    <span>2023</span>
+                    <span><i>16 +</i></span>
+                    <span>2 Entrega</span>
+                    <span>Terror</span>
+                </h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores optio natus animi quos velit? Quibusdam itaque qui aut odio odit eligendi tenetur ex, voluptas dicta voluptatibus expedita ullam aspernatur molestias?
+                </p>
+
+                <div class="buttons">
+                    <a href="#">Play</a>
+                    <a href="#">My List</a>
+                </div>
+            </div>
+            <a href="#" class="play" onclick="toogleVideo()">
+                <img src="img/play.png" alt="play">
+                Watch Trailer
+            </a>
+        </section>
+
+        <section class="trailer">
+            <video src="img/trailerMonja.mp4" controls></video>
+            <img src="img/close.png" alt="close" onclick="toogleVideo()" class="close">
+        </section>
+    </main>
+
+
+    <script>
+        function toogleVideo(){
+
+            const trailer = document.querySelector(".trailer");
+
+            //console.log(trailer);
+
+            const video = document.querySelector("video");
+
+            // prueba = trailer.classList.toggle("active");
+            trailer.classList.toggle("active");
+
+            //console.log(prueba);
+            video.correntTime=0;
+            video.pause()
+
+        }
+
+        //toogleVideo();
+    </script>
+</body>
+</html>

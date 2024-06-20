@@ -1,0 +1,75 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.conteiner{
+    background-color: rgb(64, 64, 179);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+
+.conteiner .sub-conteiner{
+    background-color: white;
+    border-radius: 10px;
+    width: 600px;
+    padding: 10px 20px ;
+    box-shadow: 0px 5px 10px rgba(120, 144, 241, 0.5);
+}
+
+.conteiner .sub-conteiner .contenido .encabezado{
+    display: flex;
+    gap: 10px;
+    justify-content: start;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.conteiner .sub-conteiner .contenido .encabezado .imagen{
+    margin-right: 10px;
+}
+
+.conteiner .sub-conteiner .contenido .encabezado .info{
+    font-weight: bolder;
+}
+
+.conteiner .sub-conteiner .contenido .actions{
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+    padding: 10px 0;
+}
+
+.conteiner .sub-conteiner .contenido .actions button{
+    border: none;
+    padding: 15px;
+    min-width: 120px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.conteiner .sub-conteiner .contenido .actions .descarga{
+    background-color: #029BE1;
+    color: white;
+}
+
+.conteiner .sub-conteiner .contenido .actions .descarga:hover{
+    background-color: #0280DE;
+}
+
+.conteiner .sub-conteiner .contenido .actions .volver{
+    background-color: white;
+    border: 1px solid #ccc;
+}
+
+.conteiner .sub-conteiner .contenido .actions .volver:hover{
+    background-color: #eee;
+}
